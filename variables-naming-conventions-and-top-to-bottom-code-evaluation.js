@@ -24,9 +24,12 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
-
-console.log(d);
+let customerName = "Alice";
+let numberOfItems = 5;
+let totalCost = 20;
+let itemsPurchased = ["book", "pen", "notebook", "eraser", "ruler"];
+let itemPrices = [5, 2, 3, 1, 9];
+let purchaseSummary = customerName + " bought " + numberOfItems + " items for $" + totalCost + ".";
+let receiptDetails = "Items purchases: " + itemsPurchased.join(", ") + " with prices $" + itemPrices.join(", ") + ".";
+console.log(purchaseSummary);
+console.log(receiptDetails);
